@@ -4,9 +4,10 @@ IHP standalone Script to run migrations
 ## Why?
 **TL;DR**
 
-On a production server where the build IHP executable is running I need a way to run the pending migrations.
-This Script can also be compiled into an executable and shipped to the prod server together with the server executable,
-so that I dont have to install the IHP development framework on the prod systems.
+On the production server, where the server executable is running I also need a way to run the pending DB migrations.
+
+This Script can be compiled into an executable and shipped to the prod server together with the server executable,
+so that I dont have to install the IHP development framework on the prod system.
 
 **Long version:**
 
