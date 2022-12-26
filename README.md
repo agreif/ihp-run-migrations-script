@@ -11,7 +11,7 @@ so that I dont have to install the IHP development framework on the prod system.
 
 **Long version:**
 
-On the development server, where all dev tools, compilers, etc are installed, running the migrations from the command line is described in the (Running Migrations)[https://ihp.digitallyinduced.com/Guide/database-migrations.html#running-migrations] chapter and works like this:
+On the development server, where all dev tools, compilers, etc are installed, running the migrations from the command line is described in the [Running Migrations](https://ihp.digitallyinduced.com/Guide/database-migrations.html#running-migrations) chapter and works like this:
 ```
 $ cd my-ihp-project
 
@@ -36,7 +36,7 @@ result/bin/
 The Script in this repo does only one thing, it runs the migrations.
 IHP determines internally which migrations are already there and which are pending, then the pending ones are executed.
 
-Fortunately (IHP Scripts)[https://ihp.digitallyinduced.com/Guide/scripts.html] can also be compiled into a standalone executable like the server app itself.
+Fortunately [IHP Scripts](https://ihp.digitallyinduced.com/Guide/scripts.html) can also be compiled into a standalone executable like the server app itself.
 
 The script has to be saved here:
 ```
