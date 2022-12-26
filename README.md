@@ -1,5 +1,5 @@
 # ihp-run-migrations-script
-IHP standalone Script to run migrations
+[IHP](https://ihp.digitallyinduced.com/) standalone Script to run migrations easilyon production servers
 
 ## Why?
 **TL;DR**
