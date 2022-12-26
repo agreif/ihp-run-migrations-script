@@ -1,5 +1,5 @@
 # ihp-run-migrations-script
-[IHP](https://ihp.digitallyinduced.com/) standalone Script to run migrations easilyon production servers
+[IHP](https://ihp.digitallyinduced.com/) standalone Script to run migrations easily on production servers
 
 ## Why?
 **TL;DR**
@@ -63,7 +63,25 @@ result/bin/
 └── RunProdServerWithoutOptions
 ```
 
-Now you can ship these executables to the production server and run them standalone:
+## Deployment on the prod server
+On the prod server the migration files must exist, so this folder structure has to be shipped:
+
+```
+$ tree prod-bundle
+prod-bundle/
+├── Application
+│   └── Migration
+│       ├── 1671820011.sql
+│       ├── 1671823819.sql
+│       ├── 1671825677.sql
+│       ├── 1671827312.sql
+│       └── 1672045948.sql
+├── RunMigrations
+├── RunProdServer
+└── RunProdServerWithoutOptions
+```
+
+Now you can run them standalone:
 ```
 $ DATABASE_URL=postgresql://...   ./RunMigrations
 
